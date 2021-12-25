@@ -1,0 +1,32 @@
+.texCenter {
+  text-align: center;
+}
+.formParent {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameAndEmail {
+  width: 280px;
+  height: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.nameAndEmail:hover {
+  border: 2px solid yellowgreen;
+}
+.buttonSubmit {
+  padding: 10px;
+  width: 280px;
+  border-radius: 5px;
+  background-color: tomato;
+  border: transparent;
+  font-weight: 900;
+}

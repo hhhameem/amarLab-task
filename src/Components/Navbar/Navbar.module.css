@@ -1,0 +1,26 @@
+.headerNavbar {
+  width: 100%;
+  height: auto;
+  background-color: rgb(32, 29, 29);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.navItem {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+span {
+  margin: 0;
+}
+
+@media only screen and (min-width: 426px) {
+  .navItem {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+}

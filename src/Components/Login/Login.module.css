@@ -18,15 +18,23 @@
   height: 30px;
   margin-bottom: 20px;
   border-radius: 5px;
+  border: 2px solid #457b9d;
+  transition: border 0.5s ease-in-out;
 }
 .nameAndEmail:hover {
-  border: 2px solid yellowgreen;
+  border: 2px solid #252a34;
 }
 .buttonSubmit {
   padding: 10px;
   width: 280px;
   border-radius: 5px;
-  background-color: tomato;
+  background-color: #457b9d;
+  color: #eaeaea;
   border: transparent;
-  font-weight: 900;
+  font-weight: 700;
+  transition: background-color 0.5s ease-in-out;
+}
+.buttonSubmit:hover {
+  background-color: #252a34;
+  color: #eaeaea;
 }

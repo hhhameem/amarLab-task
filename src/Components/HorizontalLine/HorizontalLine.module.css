@@ -5,12 +5,13 @@
 .hr {
   width: 280px;
   text-align: center;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #252a34;
   line-height: 0.1em;
   margin: 10px 0 20px;
 }
 
 .hr span {
-  background: #fff;
+  background: #457b9d;
+  color: #eaeaea;
   padding: 0 10px;
 }

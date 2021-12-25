@@ -1,5 +1,6 @@
 .blogContainer {
-  border: 1px solid khaki;
+  border: 1px solid #457b9d;
+  border-radius: 5px;
 }
 .blogImage {
   width: 100%;
@@ -23,7 +24,11 @@ h5 {
   padding: 10px 15px;
   margin: 10px 0px;
   color: #ffffff;
-  background-color: lightcoral;
+  background-color: #457b9d;
   border: none;
   border-radius: 5px;
+  transition: background-color 0.5s ease-in-out;
+}
+.deleteBtn:hover {
+  background-color: #e63946;
 }

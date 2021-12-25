@@ -12,7 +12,6 @@ const Blogs = () => {
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
-  console.log(blogs);
 
   const deleteBlog = (id) => {
     if (window.confirm("Do you want to DELETE this blog?")) {
@@ -25,7 +24,12 @@ const Blogs = () => {
     <div className='containerParent'>
       <Navbar></Navbar>
       <div className='container'>
-        <h1>Available Blogs</h1>
+        <h1 className={styles.textCenter}>Available Blogs</h1>
+        <p className={styles.textCenter}>
+          You can Only Delete any of these blogs. On reload all the previous
+          blogs will re-appear as I am fetching data from a .json file and
+          storing them to a state.
+        </p>
         <div className={styles.blogs}>
           {blogs.map((blog) => (
             <Blog key={blog._id} blog={blog} deleteBlog={deleteBlog}></Blog>

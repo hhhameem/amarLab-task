@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
-import styles from "./Navbar.module.css";
+import "./Navbar.css";
 
 const Navbar = () => {
   const { user, setUser, logOut } = useAuth();
@@ -14,22 +14,42 @@ const Navbar = () => {
   }, [user, setUser]);
 
   return (
-    <div className={styles.headerNavbar}>
-      <NavLink to='/' className={styles.navItem}>
+    <div className='headerNavbar'>
+      <NavLink
+        to='/'
+        className={({ isActive }) => (isActive ? "ActiveNavItem" : " navItem")}
+      >
         Home
       </NavLink>
-      <NavLink to='/contact' className={styles.navItem}>
+      <NavLink
+        to='/contact'
+        className={({ isActive }) => (isActive ? "ActiveNavItem" : " navItem")}
+      >
         Contact
       </NavLink>
-      <NavLink to='/blogs' className={styles.navItem}>
+      <NavLink
+        to='/blogs'
+        className={({ isActive }) => (isActive ? "ActiveNavItem" : " navItem")}
+      >
         Blogs
       </NavLink>
       {loggedIn ? (
-        <span className={styles.navItem} onClick={logOut}>
+        <NavLink
+          to='/login'
+          className={({ isActive }) =>
+            isActive ? "ActiveNavItem" : " navItem"
+          }
+          onClick={logOut}
+        >
           LogOut
-        </span>
+        </NavLink>
       ) : (
-        <NavLink to='/login' className={styles.navItem}>
+        <NavLink
+          to='/login'
+          className={({ isActive }) =>
+            isActive ? "ActiveNavItem" : " navItem"
+          }
+        >
           Login
         </NavLink>
       )}

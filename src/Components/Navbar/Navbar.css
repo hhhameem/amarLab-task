@@ -1,7 +1,7 @@
 .headerNavbar {
   width: 100%;
   height: auto;
-  background-color: rgb(32, 29, 29);
+  background-color: #252a34;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -11,7 +11,12 @@
 .navItem {
   padding: 10px 10px;
   text-decoration: none;
-  color: #ffffff;
+  color: #eaeaea;
+}
+.ActiveNavItem {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #e63946;
 }
 span {
   margin: 0;
@@ -19,7 +24,7 @@ span {
 
 @media only screen and (min-width: 426px) {
   .navItem {
-    padding: 10px 15px;
+    padding: 10px 10px;
     text-decoration: none;
     color: #ffffff;
   }

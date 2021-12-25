@@ -5,6 +5,9 @@
   border: khaki;
   grid-gap: 10px;
 }
+.textCenter {
+  text-align: center;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 480px) {

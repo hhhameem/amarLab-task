@@ -36,7 +36,7 @@ const Home = () => {
             degree from{" "}
             <span className={styles.bold}>United International University</span>{" "}
             with a{" "}
-            <span className={styles.bold}>CGPA of 3.29 out of 4.00.</span>{" "}
+            <span className={styles.bold}>CGPA of *.** out of 4.00.</span>{" "}
             During my university days, I have completed several projects for my
             course requirements.
           </p>

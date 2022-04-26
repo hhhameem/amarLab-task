@@ -18,7 +18,7 @@ const Contact = () => {
         </p>
         <HorizontalLine>OR</HorizontalLine>
         <p className={styles.texCenter}>
-          <MdPhone style={{ marginBottom: "-4px" }} /> +8801953471217
+          <MdPhone style={{ marginBottom: "-4px" }} /> +8801*********
         </p>
         <HorizontalLine>OR</HorizontalLine>
         <div className={styles.formParent}>
